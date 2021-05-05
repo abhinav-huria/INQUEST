@@ -1,18 +1,17 @@
-//import logo from './inqq.png';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-//import React from "React";
-// import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
-// import Table from 'react-bootstrap/Table';
-// import Card from 'react-bootstrap/Card';
-// import Nav from 'react-bootstrap/Nav';
 import LpRight from './LpRight';
+import Navv from './Navbar';
+import Btn from './buttongroup';
+import Abtn from './Answerbtn';
+import './App.css';
 
-//import Navbar from 'react-bootstrap/Button';
 //import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
-function App() {  return (
+function App() { 
+   return (<>
+    <Navv />
+    <Btn />
+    <Abtn/>
   <LpRight />
+  </>
 );
 }
 
