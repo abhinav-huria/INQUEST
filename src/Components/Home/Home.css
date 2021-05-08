@@ -1,0 +1,82 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.nav{
+  background-color: #2D2C36;
+  height: 3.5rem;
+}
+
+.nav2{
+  height: 3rem;
+}
+
+.logo{
+  height: 60px;
+  width:120px;
+  margin-left: 45%;
+}
+
+.search{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#btn{
+  margin-top: 4rem;
+  border-radius: 20px;
+  margin-left: 5rem;
+  width: 50rem;
+
+} 
+
+#fixedbtn{
+  position: fixed;
+  float: right;
+  bottom: 2rem;
+  right: 2rem; 
+  border-radius: 20px;
+}
+
+#stat{
+  float:right;
+  margin-top: -4rem;
+  margin-right: 4%;
+  width: 20em;
+  }
+  
+
+#qcard{
+float:right;
+margin-top: 2%;
+margin-right: 4%;
+margin-left:70%;
+width: 20em;
+}
+
+#cont{
+  width: 52rem;
+  margin-left: 4rem;
+}
+
