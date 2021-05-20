@@ -5,7 +5,6 @@ import NavBar from "./components/NavBar";
 import "./components/Home.css";
 import SearchResults from "./components/SearchResults";
 import { BrowserRouter, Route } from "react-router-dom";
-// import Switch from 'react-router-dom';
 import AddAnswer from "./components/AddAnswer";
 import Topic from "./components/Topics";
 class App extends React.Component {
@@ -69,7 +68,7 @@ class App extends React.Component {
         title: "How do I compare strings in Java?",
         topic: "Java",
         description: "I've been using the == operator in my program to compare all my strings so far. However, I ran into a bug, changed one of them into .equals() instead, and it fixed the bug.",
-        date: "2018-01-01",
+        date: "2020-01-01",
         answerIds: ["A20"],
       },
       {
@@ -101,7 +100,7 @@ class App extends React.Component {
         title: "How do I check whether a file exists without exceptions?",
         topic: "Python",
         description: "How do I check whether a file exists or not, without using the try statement?",
-        date: "2014-08-08",
+        date: "2020-08-08",
         answerIds: ["A28", "A29", "A30"],
       },
       {
@@ -109,7 +108,7 @@ class App extends React.Component {
         title: "What is the difference between public, protected, package-private and private in Java?",
         topic: "Java",
         description: "In Java, are there clear rules on when to use each of access modifiers, namely the default (package private), public, protected and private, while making class and interface and dealing with inheritance?",
-        date: "2018-09-08",
+        date: "2019-09-08",
         answerIds: ["A31", "A32"],
       },
       {
@@ -158,8 +157,7 @@ class App extends React.Component {
       {
         id: "A9",
         questionId: "Q2",
-        reponse:
-          "The static keyword in Java means that the variable or function is shared between all instances of that class, not the actual objects themselves.",
+        response: "The static keyword in Java means that the variable or function is shared between all instances of that class, not the actual objects themselves.",
         date: "2021-05-05",
       },
       {

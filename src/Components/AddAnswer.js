@@ -14,9 +14,11 @@ class AddAnswer extends React.Component {
     );
   };
   render() {
+    console.log(this.props);
     const question = this.props.location.state.question;
     return (
       <>
+        <div id="answerbackground">
     <div className="grid-container">
         <div className="galign">
       <SideBar data={this.props.data}/>
@@ -50,8 +52,9 @@ class AddAnswer extends React.Component {
   </p></div>
         <div id="answerbody">
           {this.props.data.answers.map((answer) => {
-            if (answer.questionId === question.id)
-              return <ShowAnswer answer={answer} />;
+            if (answer.questionId === question.id){
+              return <ShowAnswer answer={answer} />;}
+              return <></>;
           })}
         </div>
         </Container>
@@ -80,7 +83,7 @@ class AddAnswer extends React.Component {
           </Form>
         </div>
         </Container>
-        
+        </div>
       </>
     );
   }

@@ -7,12 +7,16 @@ background-color: yellow;
 } */
 
 
-#hbackground{
+#homebg{
   /* width:100vw;
   height:100vh; */
   background-image: url("./images/homebg.png");
   background-attachment: fixed;
   overflow: hidden;
+}
+
+#homebg .grid-container{
+  margin-top: 10rem;
 }
 
 .App {
@@ -80,6 +84,7 @@ Button:active {
   float:right;
   margin-top: 0.3rem;
   margin-right: 4%;
+  margin-bottom: 1.5rem;
   width: 20em;
   color: #303030;
   max-width:22rem ;
@@ -132,9 +137,9 @@ Button:active {
 }
 
 #cont {
-  max-width: 55rem;
+  max-width: 52rem;
   margin-top: 10rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
   border-radius: 10px;
   color:#303030;
   margin-bottom: 10rem;
@@ -219,16 +224,22 @@ box-shadow:  5px 5px 10px #968e83,
   max-width: 52rem;
   padding:1rem;
   color:white;
-  margin-top: 8rem;
+  margin-top: 8.5rem;
   font-size: 15px;
   font-weight:550;
   box-shadow:  5px 5px 10px #bebebe,
   -5px -5px 10px #ffffff;
+ 
 }
 .overlay {
   z-index: 9;
   margin: 30px;
   background: #009938;
+}
+
+#alignform{
+  max-height: 100vh;
+ 
 }
 
 #card{
@@ -297,6 +308,7 @@ cursor: pointer;
   #qcard {
       display: none !important;
   }
+
   #cont{
     margin-left: 0rem;
   }

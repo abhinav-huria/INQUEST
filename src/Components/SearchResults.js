@@ -3,19 +3,15 @@ import Question from "./Question";
 import { Link } from "react-router-dom";
 import './SearchResult.css';
 import Noresult from './images/noresult.svg';
-
+import qs from 'qs';
 
 class SearchResults extends React.Component {
   render() {
-    
-    const qs = require("qs");
     let query = qs.parse(this.props.location.search, {
       ignoreQueryPrefix: true,
     }).q;
-    const filteredQuestions = this.props.questions.filter((question) => {
-      if (question.title.toLowerCase().includes(query.toLowerCase()))
-        return question;
-    });
+    const filteredQuestions = this.props.questions.filter((question) => ( question.title.toLowerCase().includes(query.toLowerCase())
+    ));
    
     if (filteredQuestions.length === 0)
       return (

@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
 import './Home.css';
+import './Animation.css';
 import Animation from './Animation';
 
 class AskQuestionForm extends React.Component {
@@ -68,6 +69,7 @@ class AskQuestionForm extends React.Component {
         </Form>
       </Container>
       <Animation/>
+     
       </>
     );
   }

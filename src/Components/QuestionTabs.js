@@ -37,9 +37,8 @@ class QuestionTabs extends React.Component {
   };
   unAnswered = () => {
     this.setState({
-      sortedQuestions: this.props.data.questions.filter((question) => {
-        if (question.answerIds.length === 0) return question;
-      }),
+      sortedQuestions: this.props.data.questions.filter((question) => (question.answerIds.length === 0
+      )),
     });
   };
 
@@ -48,7 +47,7 @@ class QuestionTabs extends React.Component {
       <>
         <div id="cont">
           <ButtonGroup  id="btn">
-            <Button autoFocus="true" id="bcolor" onClick={this.recentQuestions} target>
+            <Button autoFocus={true} id="bcolor" onClick={this.recentQuestions} selected>
             Recent Questions
             </Button>
             <Button id="bcolor"  onClick={this.mostResponses}>

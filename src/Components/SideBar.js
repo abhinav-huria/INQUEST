@@ -7,22 +7,28 @@ import { AiFillQuestionCircle } from "react-icons/ai";
 import { RiQuestionAnswerFill} from "react-icons/ri";
 
 class SideBar extends React.Component {
-  constructor(props) {
-    super(props);
-    let questions = this.props.data.questions;
-    this.state = {
-      popularQuestions: questions.sort((question1, question2) => {
-        return question2.answerIds.length - question1.answerIds.length;
-      }),
-    };
-  }
-
+sortPopularQuestions=()=>{
+  let newQuestions=this.props.data.questions;
+  newQuestions.sort((question1, question2) => {
+    return question2.answerIds.length - question1.answerIds.length;
+  });
+  return newQuestions;
+}
+// onQuestionClicked = (event) => {
+//   const questionClicked = event.target.attributes[0].value;
+//   this.props.history.push({
+//     pathname: "/answerpage",
+//     state: {
+//       question: this.state.popularQuestions[questionClicked],
+//     },
+//   });
+// };
   onQuestionClicked = (event) => {
     const questionClicked = event.target.attributes[0].value;
     this.props.history.push({
       pathname: "/answerpage",
       state: {
-        question: this.state.popularQuestions[questionClicked],
+        question: this.sortPopularQuestions()[questionClicked],
       },
     });
   };
@@ -53,17 +59,17 @@ class SideBar extends React.Component {
             <ListGroup >
               <div className="qcardhover">
               <ListGroupItem value={0} onClick={this.onQuestionClicked}>
-                {this.state.popularQuestions[0].title}
+                {this.sortPopularQuestions()[0].title}
               </ListGroupItem>
               </div>
               <div className="qcardhover">
               <ListGroupItem value={1} onClick={this.onQuestionClicked}>
-                {this.state.popularQuestions[1].title}
+                {this.sortPopularQuestions()[1].title}
               </ListGroupItem>
               </div>
               <div className="qcardhover">
               <ListGroupItem value={2} onClick={this.onQuestionClicked}>
-                {this.state.popularQuestions[2].title}
+                {this.sortPopularQuestions()[2].title}
               </ListGroupItem>
              </div>
             </ListGroup>

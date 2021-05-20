@@ -1,3 +1,9 @@
+#answerbackground{
+    background-image: url("./images/homebg.png");
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+
 #qans{
     margin-top:10rem;
 }
@@ -81,7 +87,7 @@ font-weight: 500;
     align-items: right;
     margin-right: 5%;
     width:20%;
-  
+    margin-top: 10rem;
   }
   
 .galign{

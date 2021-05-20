@@ -15,6 +15,7 @@
     background: -webkit-linear-gradient(to left, #fad545, #ffaa33);  
     width: 100%;
     z-index:-1;
+  
 }
 
 .circles{
@@ -50,7 +51,7 @@
     left: 10%;
     width: 20px;
     height: 20px;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-duration: 12s;
 }
 
@@ -58,7 +59,7 @@
     left: 70%;
     width: 20px;
     height: 20px;
-    animation-delay: 2.5s;
+    animation-delay: 0s;
 }
 
 .circles li:nth-child(4){
@@ -80,7 +81,7 @@
     left: 75%;
     width: 110px;
     height: 110px;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 .circles li:nth-child(7){
@@ -102,7 +103,7 @@
     left: 20%;
     width: 15px;
     height: 15px;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-duration: 35s;
 }
 
@@ -110,7 +111,7 @@
     left: 85%;
     width: 150px;
     height: 150px;
-    animation-delay: 0s;
+    animation-delay: 1s;
     animation-duration: 11s;
 }
 .circles li:nth-child(11){

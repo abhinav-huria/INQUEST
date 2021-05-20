@@ -4,7 +4,9 @@ import './Answer.css';
 const ShowAnswer = ({ answer }) => {
   return (
     <>
+  
     <div id="answercardtop">
+    
     <Card id="answercard" >
     <li key={answer.id}>
       {answer.response}
@@ -16,6 +18,7 @@ const ShowAnswer = ({ answer }) => {
     </li>
     </Card>
     </div>
+   
     </>
   );
 };
