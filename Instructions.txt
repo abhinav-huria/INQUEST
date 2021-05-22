@@ -1,0 +1,6 @@
+Install react-router-dom , react-bootstrap, bootstrap@4.6.0, react-icons, qs before running.
+
+npm install react-bootstrap bootstrap@4.6.0
+npm install react-router-dom
+npm install qs
+npm install react-icons

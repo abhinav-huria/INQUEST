@@ -14,15 +14,7 @@ sortPopularQuestions=()=>{
   });
   return newQuestions;
 }
-// onQuestionClicked = (event) => {
-//   const questionClicked = event.target.attributes[0].value;
-//   this.props.history.push({
-//     pathname: "/answerpage",
-//     state: {
-//       question: this.state.popularQuestions[questionClicked],
-//     },
-//   });
-// };
+
   onQuestionClicked = (event) => {
     const questionClicked = event.target.attributes[0].value;
     this.props.history.push({
