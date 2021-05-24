@@ -4,9 +4,12 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "**/*.js"
   pull_request:
     branches:
       - master
+   
 
 jobs:
   build:
